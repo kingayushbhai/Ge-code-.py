@@ -1,0 +1,41 @@
+P13. WAP to accept a name from a user. Raise and handle appropriate exception(s) if the text entered by the user contains digits and/or special characters.
+
+INPUT:
+
+def getUserName(): 
+ userName= input("Enter Your Name: ")
+ userNameList = []
+ is_valid = True
+
+ for i in range(0, len(userName)):
+  temp = userName[i]
+  if temp not in userNameList:
+    userNameList.append(temp)
+
+ for i in userNameList:
+  if i.islower() or i.isupper() or ord(i)==32:
+    continue
+
+  else: 
+    is_valid= False
+
+ if is_valid:
+   print("The entered username is", userName)
+
+ else:
+
+   print("User name cannot contain numbers or special characters. Please try again")
+
+getUserName()
+
+
+
+OUTPUT:
+
+Enter Your Name: Ayush1912 Tiwari2003
+
+User name cannot contain numbers or special characters. Please try again
+
+Enter Your Name: Ayush Tiwari
+
+The entered usename is Ayush Tiwari

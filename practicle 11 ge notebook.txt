@@ -1,0 +1,54 @@
+P12. Consider a tuple t1=(1,2,5,7,9,2,4,6,8,10). WAP to perform following operations.
+
+(a). Print half the values of the tuple in one line and the other half in the next line.
+
+(b). Print another tuple whose values are even numbers in the given tuple.
+
+(c).Concatenate a tuple t2=(11,13,15)with t1.
+
+(d). Retum maximum and minimum value from this tuple.
+
+
+
+INPUT:
+
+def print_lines(t):
+ length = len(t)
+ for i in range(0, length//2):
+   print(t[i], end="")
+ print() 
+   for i in range(length//2, length): print(t[i], end="")
+ print()
+
+def even_tuple(t):
+ t2 = []
+ for i in t:
+  if 1%2==0:
+    t2.append(i)
+ return tuple(12)
+
+t1=(1,2,5,7,9,2,4,6,8,10) 
+t2= (11, 13, 15)
+
+print_lines(t1)
+
+print("Even tuple: ",even_tuple(t1))
+
+t1= t1+t2
+
+print("Concatinated tuple:", t1)
+
+print("Maximum value in the tuple is ",max(t1)) 
+print("Minimum value in the tuple is ",min(t1))
+
+
+OUTPUT:
+
+12579
+246810
+Even tuple: (2, 2, 4, 6, 8, 10)
+Concatinated tuple: (1, 2, 5, 7, 9, 2, 4, 6, 8, 10, 11, 13, 15)
+Maximum value in the tuple is 15
+Minimum value in the tuple is 1
+
+
