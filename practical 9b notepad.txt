@@ -1,0 +1,40 @@
+P9b).calculate the frequency of each character in the file. Use a variable of dictionary type to maintain the count.
+
+INPUT:
+
+def dictCreator(text, charDict):
+ for i in text:
+  keyList charDict.keys()
+  if i.lower() in keyList or i=="" or i== "\n":
+    continue
+  else:
+    charDict.update({i.lower(): 0})
+ return charDict
+
+def frequencyCounter(text, charDict):
+ keyList = charDict.keys()
+ for i in keyList:
+   count=0
+   for j in text:
+     if i==j:
+       count+=1
+   charDict.update({i: count))
+ return charDict
+
+
+
+f = open("C:\\Users\\amit\\OneDrive\\Desktop\\pythonRc\\Practise session\\practical9Text.txt", 'r')
+
+
+file Text = f.read()
+
+f.close()
+
+charDict = {}
+charDict dictCreator(file Text, charDict)
+
+print(frequencyCounter(file Text, charDict))
+
+OUTPUT:
+
+['t': 37, 'h': 15, 'e': 42, T: 12, 'x': 1, 'u': 12, 's': 25, 'T': 9, 'a': 30, ',': 7, 'r': 28, 'm': 13, 'p': 9, 'T: 38, 'c': 13, 'b': 6, 'o': 23, 'n': 27, 'g': 12, 'd': 10, 'v': 2, 'y': 6, ": 4, "1': 1, '0': 2, 'w': 3, '6': 1, 'K': 2, ': 1}

@@ -1,0 +1,50 @@
+P7 . Write a function that accepts two strings and returns the indices of all the occerrences of the second string in the first string as a list . If the second string  is not present in the first string then it should return – 1.
+
+
+CODE:
+
+def find_occurrences(main_string,sub_string):   
+    indices = []
+    length = len(main_string)
+    sub_length = len(sub_string)
+    
+    for i in range(length - sub_length+1):
+        if main_string[i:i+sub_length]==sub_string:
+            indices.append(i)
+    return indices if indices else -1
+    
+first_string = input("Enter your first string:  ")
+second_string = input("Enter your second string: ")
+result = find_occurrences(first_string,second_string)
+print(result)
+
+
+
+INPUT 1:
+
+Enter your first string : [‘Hello’,’Python’,’Hello’]
+Enter your second string: ‘Hello’
+
+OUTPUT 1:
+
+[1,18]
+Enter your first string : [‘Hello’,’Python’,’Hello’]
+Enter your second string:’Language’
+
+INPUT 2:
+
+Enter your first string : [‘Hello’,’Python’,’Hello’]
+Enter your second string:’Language’
+
+OUTPUT 2:
+
+-1
+
+
+
+
+
+
+
+
+

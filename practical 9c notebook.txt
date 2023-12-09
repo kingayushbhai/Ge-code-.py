@@ -1,0 +1,23 @@
+P9c). print the words in reverse order.
+ 
+INPUT:
+
+f = open("C:\\Users\\ayush\\OneDrive\\Desktop\\pythonRc\\Practise session\\practical9Text.txt", 'r')
+
+file Textf.read()
+
+f.close()
+
+wordList = file Text.split(" ")
+
+length = len(wordList)
+
+length-=1
+
+while(length>=0):
+print(wordList[length], end="")
+length=1
+
+OUTPUT:
+
+programming functional and object-oriented structured, including paradigms, programming multiple supports It garbage-collected and typed dynamically is Python indentation, significant of use the with readability code emphasizes philosophy design Its language. programming general-purpose high-level, a is Python

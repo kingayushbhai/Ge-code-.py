@@ -1,0 +1,26 @@
+#P8 :- WAP to create a list of the cubes of only the even integer pers appearing in the input list may have elements of other types also) using for loops and comprehension
+
+INPUT:
+
+userinput = input("Enter the inputs separated by':': ")
+
+userinput-userinput.split(',')
+
+result =[]
+
+for i in userinput:
+  i=i.strip()
+  if i.isdigit() and int(i)%2==0: 
+    i=int(i) 
+    result.append(i*i*i)
+
+print(result)
+
+Input:
+
+Enter the inputs separated by',': 21, @, 2, 5, 8, 4, Ayush, @
+
+
+OUTPUT:
+
+[8, 512, 64]
